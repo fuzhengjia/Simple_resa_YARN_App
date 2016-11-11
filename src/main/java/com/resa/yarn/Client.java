@@ -67,7 +67,7 @@ public class Client {
         ContainerLaunchContext amCLC = Records.newRecord(ContainerLaunchContext.class);
         amCLC.setCommands(Collections.singletonList("$JAVA_HOME/bin/java"
                 + " -Xmx256M"
-                + " AppMaster"
+                + " com.resa.yarn.AppMaster"
                 + " 1>" + ApplicationConstants.LOG_DIR_EXPANSION_VAR + "/stdout"
                 + " 2>" + ApplicationConstants.LOG_DIR_EXPANSION_VAR + "/stderr"));
 
