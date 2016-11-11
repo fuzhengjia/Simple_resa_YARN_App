@@ -120,7 +120,7 @@ public class AppMaster implements AMRMClientAsync.CallbackHandler {
             ContainerLaunchContext cCLC = Records.newRecord(ContainerLaunchContext.class);
             cCLC.setCommands(Collections.singletonList("$JAVA_HOME/bin/java"
                     + " -Xmx256M"
-                    + " Container"
+                    + " com.resa.yarn.Container"
                     + " 1>" + ApplicationConstants.LOG_DIR_EXPANSION_VAR + "/stdout"
                     + " 2>" + ApplicationConstants.LOG_DIR_EXPANSION_VAR + "/stderr"));
 
