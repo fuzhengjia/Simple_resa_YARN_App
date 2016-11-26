@@ -9,7 +9,7 @@ import org.apache.thrift.transport.TTransport;
  */
 public class HelloWorldClient {
     public static void main(String[] args) throws Exception {
-        TTransport transport = new TSocket("localhost", 7912);
+        TTransport transport = new TSocket("localhost", 7988);
         TProtocol protocol = new TBinaryProtocol(transport);
 
         // 创建client
@@ -19,7 +19,7 @@ public class HelloWorldClient {
 
         // 第一种请求类型
         com.test.thrift.Request request = new com.test.thrift.Request()
-                .setType(RequestType.Say_hello).setName("test.tom").setAge(24);
+                .setType(RequestType.Say_hello).setName("test.tom").setAge(20);
         System.out.println(client.doAction(request));
 
         // 第二种请求类型

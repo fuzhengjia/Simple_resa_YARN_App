@@ -11,7 +11,7 @@ import java.net.ServerSocket;
 public class HelloWorldServer {
 
     public static void main(String[] args) throws Exception {
-        ServerSocket socket = new ServerSocket(7912);
+        ServerSocket socket = new ServerSocket(7988);
         TServerSocket serverTransport = new TServerSocket(socket);
         com.test.thrift.HelloWorldService.Processor processor
                 = new com.test.thrift.HelloWorldService.Processor(new HelloWorldServiceHandler());
