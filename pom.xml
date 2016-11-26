@@ -32,5 +32,11 @@
             <artifactId>hadoop-client</artifactId>
             <version>2.7.3</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.thrift/libthrift -->
+        <dependency>
+            <groupId>org.apache.thrift</groupId>
+            <artifactId>libthrift</artifactId>
+            <version>0.9.3</version>
+        </dependency>
     </dependencies>
 </project>
