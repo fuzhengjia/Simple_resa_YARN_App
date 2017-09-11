@@ -4,8 +4,8 @@ This is a modified version of the original project: https://github.com/gpiskas/S
 
 1. Download the project
 2. Mvn clean package
-3. Change the generated .jar file to YarnApp.jar 
-4. Copy YarnApp.jar to HDFS 
+3. Change the generated .jar file to YARNAPP.jar 
+4. Copy YARNAPP.jar to HDFS 
 ```
 # Puts the jar in HDFS under /apps/
 hadoop fs -rm -r -f /apps
