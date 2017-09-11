@@ -16,5 +16,5 @@ hadoop fs -copyFromLocal YARNAPP.jar /apps/YARNAPP.jar
 5. launch 
 ```
 # Executes the Client.
-hadoop jar YARNAPP.jar com.gpiskas.yarn.Client
+hadoop jar YARNAPP.jar com.resa.yarn.Client
 ```
